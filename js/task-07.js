@@ -4,7 +4,6 @@ const textSizeRf = document.querySelector('#text')
 
 const setFontSize = (event) => {
     textSizeRf.style.fontSize = `${event.target.value}px`;
-
 };
-
-controlSizeRf.addEventListener('input', setFontSize)
+controlSizeRf.addEventListener('input', setFontSize);
+//=========================

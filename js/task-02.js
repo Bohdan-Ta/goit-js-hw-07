@@ -10,7 +10,7 @@ const ingredientsLi = document.querySelector(`#ingredients`)
 
 const makeLiFromIngridients = option => {
   return option.map(option => {
-  const liEl = document.createElement(`li`);
+  const liEl = document.createElement("li");
   liEl.textContent = option;
   return liEl;
   });
@@ -18,3 +18,5 @@ const makeLiFromIngridients = option => {
 
 const productsLi = makeLiFromIngridients(ingredients);
 ingredientsLi.append(...productsLi);
+
+ingredientsLi.style.listStyle = 'none';

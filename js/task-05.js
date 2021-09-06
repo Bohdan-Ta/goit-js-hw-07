@@ -7,5 +7,5 @@ function inputName(el) {
     const name = inputNameEl.value;
     name === '' ? inputNoNameEl.textContent = 'незнакомец' : inputNoNameEl.textContent = name;
   
-}
+};
 //====================
