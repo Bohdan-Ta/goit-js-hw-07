@@ -17,7 +17,7 @@ const galleryImg = document.querySelector('#gallery');
 
 const getGalery = options => {
   return options.map(({ url, alt }) => {
-    return `<li><img src="${url}" alt="${alt}" width="420px" height="250px"><li>`}).join(" ")
+    return `<li><img src="${url}" alt="${alt}" width="420px" height="250px"></li>`}).join(" ")
 };
 
 galleryImg.insertAdjacentHTML('afterbegin', getGalery(images));
@@ -25,3 +25,6 @@ galleryImg.insertAdjacentHTML('afterbegin', getGalery(images));
 galleryImg.style.listStyle = 'none';
 galleryImg.style.display = 'flex';
 galleryImg.style.justifyContent = 'space-around';
+
+
+//==================
